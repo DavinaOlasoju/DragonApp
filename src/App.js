@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import './CSS/App.css';
+import Commands from './Components/Commands';
+import Audio from './Components/Audio';
+import AddNew from './Components/AddNew';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export function Navbar(){
+    return(
+        <nav className="nav">
+            <a href="/">Commands</a>
+            <a href="/audio">Manage Audio</a>
+        </nav>
+    )
 }
 
-export default App;
+export default function App() {
+	let Page
+	switch (window.location.pathname) {
+		case "/audio":
+			Page = Audio
+			break
+		case "/add-new":
+			Page = AddNew
+			break
+		default:
+			Page = Commands
+			break
+	}
+	return (
+		<>
+			<Navbar />
+			<Page />
+		</>
+	)
+}

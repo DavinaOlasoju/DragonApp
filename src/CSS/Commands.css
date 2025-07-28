@@ -1,0 +1,46 @@
+.commands-page {
+    display: inline;
+    margin: 1rem;
+    justify-content: space-around;
+}
+
+.table-names {
+    display: flex;
+    margin: 1rem;
+    justify-content: space-around;
+}
+
+.table-names > div{
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen', sans-serif;
+}
+
+.command {
+    display: flex;
+    justify-content: space-around;
+}
+
+.command > div {
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen', sans-serif;
+    background-color: rgba(116, 187, 255, 0.5);
+    height: 20px;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    margin: 5px;
+}
+
+.name {
+    width: 10%;
+}
+
+.params {
+    width: 10%;
+}
+
+.description {
+    width: 70%;
+}

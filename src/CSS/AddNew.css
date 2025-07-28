@@ -1,0 +1,47 @@
+.text-input {
+    display: flex;
+    margin: 10px;
+    justify-content: left;
+    gap: 10px
+}
+
+.file-input {
+    display: flex;
+    margin: 10px;
+    justify-content: left;
+    gap: 10px
+}
+
+.add-page > div {
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen', sans-serif;
+    width: auto;
+    border: none;
+    outline: none;
+    margin: 5px;
+}
+
+.input-field {
+    width: 15%;
+    height: 30px;
+    font-size: 16px;
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen', sans-serif;
+    margin: 5px;
+}
+
+.upload {
+    width: auto;
+    height: 30px;
+    font-size: 16px;
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen', sans-serif;
+    margin: 5px;
+}
+
+.done {
+    width: auto;
+    height: 30px;
+    font-size: 16px;
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen', sans-serif;
+    margin: 5px;
+}

@@ -1,0 +1,32 @@
+body {
+  margin: 10;
+  background: white;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    background-color: aliceblue;
+}
+
+.nav a {
+    cursor: pointer;
+    width: auto;
+    font-size: 16px;
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen', sans-serif;
+    text-decoration: none;
+    color: black;
+    background-color: rgba(116, 187, 255, 0.5);
+    padding: 10px 24px;
+    border: none;
+    outline: none;
+    margin: 10px;
+}
+
+.nav a:hover {
+    background-color: rgba(116, 187, 255, 0.8);;
+}
+
+.nav a.active {
+    border: black
+}

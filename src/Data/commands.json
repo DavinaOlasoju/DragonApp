@@ -1,0 +1,61 @@
+[
+    {
+        "name": "blink",
+        "description": "Triggers a blink action"
+    },
+    {
+        "name": "wink",
+        "params": "eye (string)",
+        "description": "Triggers a wink action in the specified eye"
+    },
+    {
+        "name": "squint",
+        "params": "amount (int)",
+        "description": "Fully open = 0, fully closed = 1"
+    },
+    {
+        "name": "track",
+        "params": "[x (int), y (int)]",
+        "description": "Causes the eyes to look off to the specified direction, max x = 35, max y = 25"
+    },
+    {
+        "name": "gaze",
+        "params": "[x (int), y (int)]",
+        "description": "Slower track, max x = 35, max y = 25"
+    },
+    {
+        "name": "Dilate",
+        "params": "amount (int)",
+        "description": "Causes the pupils to dilate by a specified amount, min = 0, max = 1"
+    },
+    {
+        "name": "roll eyes",
+        "description": "Triggers an eye-roll action"
+    },
+    {
+        "name": "jitter",
+        "params": "length (int)",
+        "description": "Causes eyes to rapidly jitter back and forth a specified number of times"
+    },
+    {
+        "name": "scary eyes",
+        "description": "Causes eyes to roll into the socket and back again"
+    },
+    {
+        "name": "shifty eyes",
+        "description": "Causes eyes to squint and look left and right suspiciously"
+    },
+    {
+        "name": "read",
+        "description": "Alternates slowly looking left and squickly looking right, as if reading"
+    },
+    {
+        "name": "wait",
+        "params": "amount (int)",
+        "description": "Generates a pause before the next command is sent"
+    },
+    {
+        "name": "close",
+        "description": "Terminates the program"
+    }
+]
