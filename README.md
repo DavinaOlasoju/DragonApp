@@ -1,11 +1,16 @@
-# Getting Started with Create React App
+# Dragon Eyes Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Dragon Eyes web app holds the command documentation for the Dragon Eyes application and supports audio uploading for the application.  
 
-## Available Scripts
+The **Commands** page lists the trigger words and parameters for all the commands that are possible with the eyes.   
+The **Manage Audio** page lists all sounds that are currently available on the application. Clicking the **Add New** button allows you to upload more and assign their trigger words.  
 
-In the project directory, you can run:
+## How to start
 
+1. Download the .zip file and extract it in your desired location  
+2. Open a terminal in the project directory  
+3. Run ***npm install*** to install necessary packages  
+4. Run ***npm start*** to run the application   
 ### `npm start`
 
 Runs the app in the development mode.\
