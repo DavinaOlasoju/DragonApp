@@ -1,5 +1,24 @@
 [
     {
+        "name": "auto",
+        "description": "Causes the eyes to run random background movements"
+    },
+    {
+        "name": "audio",
+        "params": "trigger (string)",
+        "description": "Plays the sound that corresponds to the inputted trigger"
+    },
+    {
+        "name": "rotate",
+        "params": "[side (string), amount (int)]",
+        "description": "Rotates the specified eye by the specified amount in degrees (anti-clockwise = positive)"
+    },
+    {
+        "name": "shift",
+        "params": "[side (string), x (int), y (int)]",
+        "description": "Shifts eye relative to current position (left, down = positive and 0, 0 = no shift)"
+    },
+    {
         "name": "blink",
         "description": "Triggers a blink action"
     },
