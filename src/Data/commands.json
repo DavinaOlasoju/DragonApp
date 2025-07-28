@@ -50,6 +50,14 @@
         "description": "Alternates slowly looking left and squickly looking right, as if reading"
     },
     {
+        "name": "sleep",
+        "description": "Clears the command queue and closes eyes"
+    },
+    {
+        "name": "wake",
+        "description": "Opens eyes"
+    },
+    {
         "name": "wait",
         "params": "amount (int)",
         "description": "Generates a pause before the next command is sent"
