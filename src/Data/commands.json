@@ -43,8 +43,8 @@
         "description": "Slower track, max x = 35, max y = 25"
     },
     {
-        "name": "Dilate",
-        "params": "amount (int)",
+        "name": "dilate",
+        "params": "size (int)",
         "description": "Causes the pupils to dilate by a specified amount, min = 0, max = 1"
     },
     {
@@ -58,6 +58,7 @@
     },
     {
         "name": "scary eyes",
+        "params": "length (int)",
         "description": "Causes eyes to roll into the socket and back again"
     },
     {
@@ -67,6 +68,10 @@
     {
         "name": "read",
         "description": "Alternates slowly looking left and squickly looking right, as if reading"
+    },
+    {
+        "name": "reset",
+        "description": "Clears the command queue and sets eyes to start position"
     },
     {
         "name": "sleep",
