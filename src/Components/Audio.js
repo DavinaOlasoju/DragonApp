@@ -8,7 +8,7 @@ export default function Audio() {
         <div className='audio-page'>
             <div className='audio-list'> {
 				AudioList.map(file => {
-					return <AudioFormat trigger={file.trigger} filepath={file.filepath} />
+					return <AudioFormat trigger={file.trigger} filepath={file.filepath} ip={file.ip}/>
 				})
 			} </div>
             <div className='add-div'>

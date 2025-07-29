@@ -17,6 +17,7 @@ function AudioSender() {
 		const formData = new FormData();
 		formData.append("trigger", trigger);
 		formData.append("audio", file);
+		formData.append("ip", ip);
 
 		setUploading(true);
 
