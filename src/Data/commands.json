@@ -67,6 +67,7 @@
     },
     {
         "name": "read",
+        "params": "length (int)",
         "description": "Alternates slowly looking left and squickly looking right, as if reading"
     },
     {
