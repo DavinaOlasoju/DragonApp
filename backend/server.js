@@ -20,21 +20,25 @@ app.post('/upload', upload.single('audio'), (req, res) => {
     let data = JSON.parse(content);
 
     const trigger = req.body.trigger;
-    const file = req.file;
+    const file = req.file.originalname;
     const ip = req.body.ip;
 
     if (!trigger || !file) return res.status(400).send('No file received');
 
+    const dupeCheck = data.some(entry => entry.trigger === trigger && entry.ip === ip);
+    data = data.filter(entry => !(entry.trigger === trigger && entry.ip === ip));
+
     const newEntry = {
     trigger: trigger,
     ip: ip,
-    filepath: file.originalname,
+    filepath: file,
     };
 
     data.push(newEntry);
-
     fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 4));
-    res.status(200).send('File uploaded');
+
+    if (dupeCheck) return res.status(200).send('File uploaded, duplicate trigger overridden'); 
+    else return res.status(200).send('File uploaded');
 
 });
 

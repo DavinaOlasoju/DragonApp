@@ -10,12 +10,12 @@
     },
     {
         "name": "rotate",
-        "params": "[side (string), amount (int)]",
+        "params": "['left' or 'right', amount (int)]",
         "description": "Rotates the specified eye by the specified amount in degrees (anti-clockwise = positive)"
     },
     {
         "name": "shift",
-        "params": "[side (string), x (int), y (int)]",
+        "params": "['left' or 'right', x (int), y (int)]",
         "description": "Shifts eye relative to current position (left, down = positive and 0, 0 = no shift)"
     },
     {
@@ -24,7 +24,7 @@
     },
     {
         "name": "wink",
-        "params": "eye (string)",
+        "params": "'left' or 'right'",
         "description": "Triggers a wink action in the specified eye"
     },
     {
@@ -53,12 +53,12 @@
     },
     {
         "name": "jitter",
-        "params": "length (int)",
+        "params": "number of jitters (int)",
         "description": "Causes eyes to rapidly jitter back and forth a specified number of times"
     },
     {
         "name": "scary eyes",
-        "params": "length (int)",
+        "params": "length in seconds (int)",
         "description": "Causes eyes to roll into the socket and back again"
     },
     {
@@ -67,7 +67,7 @@
     },
     {
         "name": "read",
-        "params": "length (int)",
+        "params": "number of lines (int)",
         "description": "Alternates slowly looking left and squickly looking right, as if reading"
     },
     {
@@ -84,7 +84,7 @@
     },
     {
         "name": "wait",
-        "params": "amount (int)",
+        "params": "length in seconds (int)",
         "description": "Generates a pause before the next command is sent"
     },
     {
